@@ -4,8 +4,8 @@ import fs from 'fs';
 // Launch the browser and open a new blank page
 const browser = await puppeteer.launch(
 {
-    headless: false, // Set to 'false' for non-headless mode (for debugging)
-    args: ['--no-sandbox', '--disable-setuid-sandbox'] // Necessary for some environments
+    //headless: false, // Set to 'false' for non-headless mode (for debugging)
+    //args: ['--no-sandbox', '--disable-setuid-sandbox'] // Necessary for some environments
 });
 const page = await browser.newPage();
 
@@ -19,7 +19,7 @@ await page.goto('https://www.instagram.com/accounts/login/', { waitUntil: 'netwo
 await page.waitForSelector('input[name="username"]');
 
 // Enter username and password
-await page.type('input[name="username"]', 'younglion');  // Replace 'your_username' with your Instagram username
+await page.type('input[name="username"]', 'younglionrasmus');  // Replace 'your_username' with your Instagram username
 await page.type('input[name="password"]', 'Fgzpz3XGQ8ZKvh2');  // Replace 'your_password' with your Instagram password
 
 // Click the login button

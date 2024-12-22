@@ -2,3 +2,7 @@ node_modules
 .idea
 instagram_page.html
 package-lock.json
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
